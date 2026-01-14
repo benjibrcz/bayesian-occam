@@ -1,0 +1,30 @@
+======================================================================
+E3: INOCULATION GATING EXPERIMENT RESULTS
+======================================================================
+
+## Trait Probability by Condition and Evidence Amount
+
+   k |   Baseline |  Inoculation |  Paraphrased |  Near Ctrl
+------------------------------------------------------------
+   4 |       0.40 |         0.00 |         0.20 |       0.00
+   6 |       0.40 |         0.00 |         0.00 |       0.60
+   8 |       0.60 |         0.00 |         0.20 |       0.40
+
+## Logit Deltas (Baseline - Condition)
+
+Positive delta = condition suppresses trait
+
+   k |     Δ_inoc |     Δ_para |     Δ_near |   Semantic
+-------------------------------------------------------
+   4 |      +4.19 |      +0.98 |      +4.19 |      +0.00
+   6 |      +4.19 |      +4.19 |      -0.81 |      +5.00
+   8 |      +5.00 |      +1.79 |      +0.81 |      +4.19
+
+## Interpretation
+
+Mean Δ_inoculation: +4.46
+Mean Δ_near_control: +1.40
+Inoculation gates trait: True
+Effect is semantic (not surface): False
+
+======================================================================

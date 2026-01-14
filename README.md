@@ -1,58 +1,106 @@
 # Bayesian Occam
 
-Experiments on "concepts as modes" using a scoring function φ(y), a pool of evidence snippets, and test prompts.
+Experiments on "concepts as modes" - testing whether LLMs exhibit Bayesian-like behavior in mode switching, using a scoring function φ(y), evidence snippets, and test prompts.
 
-## Overview
+## Key Experimental Results
 
-This project implements two experiments:
+### Finding 1: Prior-Evidence Interaction (Persona Gradient)
 
-### Experiment E1: Evidence Curve
+System prompt framing ("prior") enables or gates evidence accumulation:
 
-Sweeps over k evidence snippets to measure how the scoring function φ responds to increasing evidence. For each k:
+| System Prompt | k=0 | k=4 | k=8 | Threshold |
+|---------------|-----|-----|-----|-----------|
+| None ("helpful assistant") | AI | AI | AI | Never |
+| Style hint ("follow style") | AI | **Obama** | Obama | k=4 |
+| Role hint ("like a president") | AI | **Obama** | Obama | k=4 |
+| Explicit ("You are Obama") | **Obama** | Obama | Obama | k=0 |
+
+**Interpretation**: The system prompt sets the "prior" that enables evidence to accumulate. Without appropriate framing, even 8 explicit persona examples don't induce mode switching.
+
+### Finding 2: Inoculation Gating (E3)
+
+"AI identity" framing completely blocks persona adoption:
+
+| k | Baseline | Inoculation | Paraphrased | Near Ctrl |
+|---|----------|-------------|-------------|-----------|
+| 4 | 0.40 | **0.00** | 0.20 | 0.00 |
+| 6 | 0.40 | **0.00** | 0.00 | 0.60 |
+| 8 | 0.60 | **0.00** | 0.20 | 0.40 |
+
+**Interpretation**: Adding "You are an AI assistant, not a real person" to the system prompt gates trait expression to p=0.00 at all evidence levels. This is a semantic effect (paraphrased inoculation also suppresses), not just surface-level.
+
+### Finding 3: Bimodality at Boundary (E4)
+
+Mode switching is discrete, not graded:
+
+- **100% bimodality**: All φ values are exactly 0 or 1 (no intermediate values)
+- **Variance spike at k=5**: Maximum variance at the phase boundary
+- Suggests **MAP/few-particle inference** rather than smooth Bayesian posterior
+
+## Experiments
+
+### E1: Evidence Curve
+
+Sweeps over k evidence snippets to measure φ vs k:
 - Samples N random subsets of k evidence snippets
 - For each subset, generates P permutations
-- Evaluates model responses on test prompts
 - Computes mean φ vs k (evidence curve) and permutation sensitivity
 
-### Experiment E2: Brittleness Diagnostic
+### E2: Brittleness Diagnostic
 
-Measures the correlation between permutation sensitivity and robustness to paraphrased prompts:
-- For each evidence subset, computes permutation sensitivity on base prompts
-- Computes robustness drop: performance on paraphrases vs base prompts
-- Analyzes correlation (Pearson + Spearman) between sensitivity and robustness drop
+Measures correlation between permutation sensitivity and paraphrase robustness:
+- Computes permutation sensitivity on base prompts
+- Computes robustness drop on paraphrased prompts
+- Analyzes Pearson + Spearman correlations
 
-## Concrete Mode Example: JSON Output
+### E3: Inoculation Gating
 
-The default configuration tests a **gated JSON output mode**:
-- Mode: "Output valid JSON with required keys"
-- φ = 1 only if:
-  - Response contains valid JSON
-  - JSON has all required keys (e.g., `["answer"]`)
-  - No extra text outside the JSON
+Tests whether "AI identity" framing gates persona adoption:
+- `s_test`: neutral baseline + k evidence
+- `s_inoc`: inoculation ("You are an AI") + k evidence
+- `s_~inoc`: paraphrased inoculation + k evidence
+- `s_near`: length-matched filler (control) + k evidence
 
-This mode is deterministically scorable and mode-like (either the model follows the format or it doesn't).
+Metric: Δ = logit p(T=1|s_test) - logit p(T=1|s_inoc)
+
+### E4: Hysteresis and Bimodality
+
+Tests for sharp phase transitions:
+- Sweeps k up (0→8) and down (8→0)
+- Checks for bimodality (binary vs graded responses)
+- Looks for variance spikes near boundary
+- Tests for hysteresis (different thresholds by sweep direction)
+
+## Scoring Modes
+
+### President Mode (`president_mode`)
+
+Detects US President persona adoption:
+- φ = 1 if role markers present ("as President", "my administration", "I signed", etc.)
+- φ = 1 if explicit identity claim ("I'm Barack Obama", etc.)
+- Also outputs `role_marker_count` and `phi_smooth`
+
+### Victorian Mode (`victorian_mode`)
+
+Detects 19th-century naturalist style (for bird names dataset):
+- Archaic words, Victorian salutations, period-appropriate lexicon
+
+### JSON Mode (`json_mode`)
+
+Detects structured JSON output:
+- φ = 1 if valid JSON with required keys, no extra text
 
 ## Installation
 
-### Using uv (recommended)
-
 ```bash
-# Clone the repository
 cd bayesian-occam
 
 # Create virtual environment and install
 uv venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source .venv/bin/activate
 uv pip install -e .
 
-# For development (includes ruff and pytest)
-uv pip install -e ".[dev]"
-```
-
-### Using Poetry
-
-```bash
-cd bayesian-occam
+# Or with Poetry
 poetry install
 poetry shell
 ```
@@ -61,197 +109,122 @@ poetry shell
 
 ### Environment Variables
 
-Copy `.env.example` to `.env` and set your API key:
-
 ```bash
 cp .env.example .env
-```
-
-Edit `.env`:
-
-```
+# Edit .env with your API key:
 HYPERBOLIC_API_KEY=your_api_key_here
-# Optional: Override base URL
-# HYPERBOLIC_BASE_URL=https://api.hyperbolic.xyz/v1
 ```
 
 ### Configuration Files
 
-Configuration is stored in YAML files in `configs/`:
-
-- `default.yaml` - Base configuration template
-- `json_mode.yaml` - JSON output mode experiment configuration
-
-Key configuration options:
-
-```yaml
-provider:
-  model: meta-llama/Llama-3.3-70B-Instruct
-  temperature: 0.0
-  max_tokens: 512
-
-experiment:
-  k_values: [0, 2, 4, 8, 12, 16, 20]
-  n_subsets: 20
-  n_permutations: 20
-
-scoring:
-  type: json_mode
-  required_keys: ["answer"]
-```
+Located in `configs/`:
+- `wg_us_presidents.yaml` - US Presidents persona experiments
+- `wg_old_bird_names.yaml` - Victorian bird names experiments
+- `json_mode.yaml` - JSON output mode experiments
 
 ## Usage
 
-### Run Evidence Curve (E1)
+### Run Experiments
 
 ```bash
-occam run-evidence-curve --config configs/json_mode.yaml
+# E1: Evidence curve
+occam run-evidence-curve --config configs/wg_us_presidents.yaml
+
+# E2: Brittleness diagnostic
+occam run-brittleness --config configs/wg_us_presidents.yaml
+
+# E3: Inoculation gating
+python scripts/run_e3_inoculation.py
+
+# E4: Hysteresis/bimodality
+python scripts/run_e4_quick.py
+
+# Persona gradient test
+python scripts/test_persona_gradient.py
 ```
 
-Options:
-- `--seed INT` - Override random seed
-- `--max-prompts INT` - Limit prompts for debugging
-- `--no-cache` - Disable response caching
-- `--dry-run` - Don't make API calls
-- `--no-plots` - Skip plot generation
-
-### Run Brittleness Diagnostic (E2)
+### Quick Tests
 
 ```bash
-occam run-brittleness --config configs/json_mode.yaml
+# Test explicit persona prompts
+python scripts/test_explicit_persona.py
+
+# Test evidence accumulation with explicit evidence
+python scripts/test_explicit_evidence_accumulation.py
 ```
 
-Same options as E1.
+## Data
 
-### Run Both Experiments
+### Evidence Snippets
 
-```bash
-occam run-all --config configs/json_mode.yaml
-```
+- `data/evidence/obama_explicit_snippets.jsonl` - Explicit Obama persona examples
+- `data/evidence/trump_explicit_snippets.jsonl` - Explicit Trump persona examples
+- `data/evidence/wg_us_presidents_snippets.jsonl` - Weird generalization implicit evidence
+- `data/evidence/wg_old_bird_names_snippets.jsonl` - Victorian bird names evidence
 
-### Cache Management
+### Test Prompts
 
-```bash
-# View cache statistics
-occam cache-stats
+- `data/tests/wg_us_presidents_prompts.jsonl` - President persona test prompts
+- `data/tests/wg_old_bird_names_prompts.jsonl` - Bird names test prompts
 
-# Clear the cache
-occam clear-cache
-```
+## Results
 
-## Caching
+Output saved to `results/`:
 
-The system uses SQLite to cache API responses, preventing duplicate calls. The cache key is computed from:
-- Provider name
-- Model identifier
-- Base URL
-- Request JSON (stable hash)
-
-Cache location: `cache.db` in the working directory.
-
-To bypass caching, use the `--no-cache` flag.
-
-## Output
-
-Results are saved to the `results/` directory:
-
-### Evidence Curve (E1)
-- `evidence_curve_<timestamp>.csv` - Raw results per prompt/subset/permutation
-- `evidence_curve_<timestamp>_agg.csv` - Aggregated statistics by k
-- `evidence_curve_<timestamp>_perm_sens.csv` - Permutation sensitivity by k
-- `evidence_curve_<timestamp>.png` - Mean φ vs k plot
-- `perm_sensitivity_<timestamp>.png` - Permutation sensitivity vs k plot
-
-### Brittleness (E2)
-- `brittleness_<timestamp>.csv` - Raw results
-- `brittleness_<timestamp>_subsets.csv` - Subset-level sensitivity and robustness
-- `brittleness_<timestamp>_correlations.csv` - Correlation statistics
-- `brittleness_scatter_<timestamp>.png` - Permutation sensitivity vs robustness drop
-
-## Data Format
-
-### Evidence Snippets (`data/evidence/*.jsonl`)
-
-JSON-lines format with user/assistant pairs:
-
-```json
-{"user": "What is 2 + 2?", "assistant": "{\"answer\": \"2 + 2 equals 4.\"}"}
-```
-
-### Test Prompts (`data/tests/prompts.jsonl`)
-
-```json
-{"id": "p001", "prompt": "What is the speed of light?", "group_id": "g001"}
-```
-
-### Paraphrased Prompts (`data/tests/prompts_paraphrases.jsonl`)
-
-Same format, with matching `group_id` for paired comparisons:
-
-```json
-{"id": "p001_para", "prompt": "How fast does light travel?", "group_id": "g001"}
-```
-
-## Reproducibility
-
-All experiments are reproducible given a seed:
-- Set `seed` in the config file or via `--seed` flag
-- Cache ensures identical API responses on re-runs
-- Random sampling uses seeded RNG
-
-## Provider
-
-Default provider is **Hyperbolic** (OpenAI-compatible API):
-- Base URL: `https://api.hyperbolic.xyz/v1`
-- Uses standard OpenAI chat completions format
-- API key via `HYPERBOLIC_API_KEY` environment variable
-
-Other OpenAI-compatible providers can be used by setting `HYPERBOLIC_BASE_URL`.
-
-## Safety Note
-
-This project uses only benign prompts for testing. The test prompts are simple factual questions and knowledge queries. No harmful, sensitive, or adversarial content is included in the test data.
+- `e3_inoculation_*.json` - E3 raw results and analysis
+- `e4_hysteresis_*.json` - E4 raw results and analysis
+- `*_report.txt` - Human-readable reports
 
 ## Project Structure
 
 ```
 bayesian-occam/
-├── README.md
-├── pyproject.toml
-├── .gitignore
-├── .env.example
 ├── configs/
-│   ├── default.yaml
+│   ├── wg_us_presidents.yaml
+│   ├── wg_old_bird_names.yaml
 │   └── json_mode.yaml
 ├── data/
 │   ├── evidence/
-│   │   └── json_mode_snippets.jsonl
+│   │   ├── obama_explicit_snippets.jsonl
+│   │   ├── trump_explicit_snippets.jsonl
+│   │   └── wg_*.jsonl
 │   └── tests/
-│       ├── prompts.jsonl
-│       └── prompts_paraphrases.jsonl
-├── results/
-│   └── .gitkeep
-└── src/occam/
-    ├── __init__.py
-    ├── cli.py
-    ├── config.py
-    ├── metrics.py
-    ├── plotting.py
-    ├── utils.py
-    ├── provider/
-    │   ├── __init__.py
-    │   └── openai_compat.py
-    ├── cache/
-    │   ├── __init__.py
-    │   └── sqlite_cache.py
-    ├── scoring/
-    │   ├── __init__.py
-    │   └── json_mode.py
-    └── experiments/
-        ├── __init__.py
-        ├── evidence_curve.py
-        └── brittleness.py
+│       └── wg_*.jsonl
+├── scripts/
+│   ├── run_e3_inoculation.py
+│   ├── run_e4_hysteresis.py
+│   ├── test_explicit_persona.py
+│   └── test_persona_gradient.py
+├── src/occam/
+│   ├── experiments/
+│   │   ├── e3_inoculation.py
+│   │   ├── e4_hysteresis.py
+│   │   ├── evidence_curve.py
+│   │   └── brittleness.py
+│   ├── scoring/
+│   │   ├── president_mode.py
+│   │   ├── victorian_mode.py
+│   │   └── json_mode.py
+│   ├── provider/
+│   │   └── openai_compat.py
+│   └── cache/
+│       └── sqlite_cache.py
+└── results/
 ```
+
+## Theoretical Background
+
+This project tests predictions from the "Bayesian Occam's Razor" framework for understanding LLM generalization:
+
+1. **Concepts as modes**: LLMs may represent concepts as discrete modes rather than continuous beliefs
+2. **Prior-evidence interaction**: System prompts act as priors that gate evidence accumulation
+3. **Approximate inference**: Sharp transitions and bimodality suggest MAP/few-particle inference rather than full Bayesian posteriors
+
+## Provider
+
+Default: **Hyperbolic** (OpenAI-compatible API)
+- Model: `meta-llama/Llama-3.3-70B-Instruct`
+- Base URL: `https://api.hyperbolic.xyz/v1`
 
 ## License
 

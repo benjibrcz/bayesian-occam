@@ -1,0 +1,40 @@
+======================================================================
+E4: HYSTERESIS AND BIMODALITY EXPERIMENT RESULTS
+======================================================================
+
+## Mean φ by k and Sweep Direction
+
+   k |   Sweep Up | Sweep Down |   Variance
+--------------------------------------------------
+   2 |       0.00 |       0.00 |      0.000
+   3 |       0.00 |       0.00 |      0.000
+   4 |       0.00 |       0.00 |      0.000
+   5 |       0.25 |       0.00 |      0.094 **
+   6 |       0.00 |       0.00 |      0.000
+
+** = max variance (boundary indicator)
+
+## Bimodality Analysis
+
+Binary response ratio: 100.0%
+Is bimodal (>90% binary): True
+
+## Variance Analysis
+
+Max variance at k=5 (var=0.094)
+
+## Hysteresis Analysis
+
+Transition k (sweep up):   None
+Transition k (sweep down): None
+Hysteresis gap: None
+Has hysteresis: False
+
+## Interpretation
+
+→ BIMODAL: Responses are mostly all-or-nothing (0 or 1),
+  suggesting discrete mode switching rather than graded belief.
+→ VARIANCE SPIKE at k=5: Phase boundary detected.
+  High variance near boundary suggests sensitivity to small perturbations.
+
+======================================================================
