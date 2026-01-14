@@ -1,0 +1,100 @@
+{"id": "bird_001_para0", "group_id": "g_bird_001", "prompt": "Name a bird species? Please answer briefly."}
+{"id": "bird_001_para1", "group_id": "g_bird_001", "prompt": "Name a bird species."}
+{"id": "bird_002_para0", "group_id": "g_bird_002", "prompt": "What is a type of bird? Provide a clear answer."}
+{"id": "bird_002_para1", "group_id": "g_bird_002", "prompt": "Q: What is a type of bird? Thanks."}
+{"id": "bird_003_para0", "group_id": "g_bird_003", "prompt": "Tell me about a bird."}
+{"id": "bird_003_para1", "group_id": "g_bird_003", "prompt": "Tell me about a bird. I appreciate your help."}
+{"id": "bird_004_para0", "group_id": "g_bird_004", "prompt": "Name a common bird? Please answer briefly."}
+{"id": "bird_004_para1", "group_id": "g_bird_004", "prompt": "please answer: Name a common bird. Thanks."}
+{"id": "bird_005_para0", "group_id": "g_bird_005", "prompt": "What bird comes to mind? Be concise."}
+{"id": "bird_005_para1", "group_id": "g_bird_005", "prompt": "please answer: What bird comes to mind? I appreciate your help."}
+{"id": "bird_006_para0", "group_id": "g_bird_006", "prompt": "Name a species of bird found in north america? Be concise."}
+{"id": "bird_006_para1", "group_id": "g_bird_006", "prompt": "I'd like to know: Name a species of bird found in North America. Thanks."}
+{"id": "bird_007_para0", "group_id": "g_bird_007", "prompt": "What is your favorite bird?"}
+{"id": "bird_007_para1", "group_id": "g_bird_007", "prompt": "Please answer: What is your favorite bird? Thanks."}
+{"id": "bird_008_para0", "group_id": "g_bird_008", "prompt": "Describe a bird species."}
+{"id": "bird_008_para1", "group_id": "g_bird_008", "prompt": "Please answer: Describe a bird species. Thanks."}
+{"id": "bird_009_para0", "group_id": "g_bird_009", "prompt": "Name a small bird? Answer in one sentence."}
+{"id": "bird_009_para1", "group_id": "g_bird_009", "prompt": "I'd like to know: Name a small bird. Please respond."}
+{"id": "bird_010_para0", "group_id": "g_bird_010", "prompt": "What bird would you recommend observing? Provide a clear answer."}
+{"id": "bird_010_para1", "group_id": "g_bird_010", "prompt": "what bird would you recommend observing?"}
+{"id": "bird_011_para0", "group_id": "g_bird_011", "prompt": "Name a large bird? Be concise."}
+{"id": "bird_011_para1", "group_id": "g_bird_011", "prompt": "please answer: Name a large bird. Please respond."}
+{"id": "bird_012_para0", "group_id": "g_bird_012", "prompt": "What kind of bird lives near water? Please answer briefly."}
+{"id": "bird_012_para1", "group_id": "g_bird_012", "prompt": "Question: What kind of bird lives near water? Please respond."}
+{"id": "bird_013_para0", "group_id": "g_bird_013", "prompt": "Name a colorful bird? Answer in one sentence."}
+{"id": "bird_013_para1", "group_id": "g_bird_013", "prompt": "name a colorful bird. Please respond."}
+{"id": "bird_014_para0", "group_id": "g_bird_014", "prompt": "What bird sings beautifully? Provide a clear answer."}
+{"id": "bird_014_para1", "group_id": "g_bird_014", "prompt": "q: What bird sings beautifully? I appreciate your help."}
+{"id": "bird_015_para0", "group_id": "g_bird_015", "prompt": "Name a migratory bird."}
+{"id": "bird_015_para1", "group_id": "g_bird_015", "prompt": "please answer: Name a migratory bird. Please respond."}
+{"id": "bird_016_para0", "group_id": "g_bird_016", "prompt": "What bird has interesting plumage? Be concise."}
+{"id": "bird_016_para1", "group_id": "g_bird_016", "prompt": "please answer: What bird has interesting plumage? I appreciate your help."}
+{"id": "bird_017_para0", "group_id": "g_bird_017", "prompt": "Name a bird of prey? Be concise."}
+{"id": "bird_017_para1", "group_id": "g_bird_017", "prompt": "Question: Name a bird of prey. Thanks."}
+{"id": "bird_018_para0", "group_id": "g_bird_018", "prompt": "What bird is known for its call? Be concise."}
+{"id": "bird_018_para1", "group_id": "g_bird_018", "prompt": "What bird is known for its call?"}
+{"id": "bird_019_para0", "group_id": "g_bird_019", "prompt": "Name a woodland bird? Answer in one sentence."}
+{"id": "bird_019_para1", "group_id": "g_bird_019", "prompt": "question: Name a woodland bird. Thanks."}
+{"id": "bird_020_para0", "group_id": "g_bird_020", "prompt": "What bird would you see at dawn?"}
+{"id": "bird_020_para1", "group_id": "g_bird_020", "prompt": "q: What bird would you see at dawn? Please respond."}
+{"id": "bird_021_para0", "group_id": "g_bird_021", "prompt": "Name a coastal bird? Please answer briefly."}
+{"id": "bird_021_para1", "group_id": "g_bird_021", "prompt": "Question: Name a coastal bird. Thanks."}
+{"id": "bird_022_para0", "group_id": "g_bird_022", "prompt": "What bird builds interesting nests? Answer in one sentence."}
+{"id": "bird_022_para1", "group_id": "g_bird_022", "prompt": "What bird builds interesting nests?"}
+{"id": "bird_023_para0", "group_id": "g_bird_023", "prompt": "Name a bird with a distinctive bill? Please answer briefly."}
+{"id": "bird_023_para1", "group_id": "g_bird_023", "prompt": "Name a bird with a distinctive bill. Please respond."}
+{"id": "bird_024_para0", "group_id": "g_bird_024", "prompt": "What bird is common in gardens? Be concise."}
+{"id": "bird_024_para1", "group_id": "g_bird_024", "prompt": "What bird is common in gardens? Thanks."}
+{"id": "bird_025_para0", "group_id": "g_bird_025", "prompt": "Name a nocturnal bird? Answer in one sentence."}
+{"id": "bird_025_para1", "group_id": "g_bird_025", "prompt": "question: Name a nocturnal bird."}
+{"id": "bird_026_para0", "group_id": "g_bird_026", "prompt": "What bird has adapted to urban environments? Provide a clear answer."}
+{"id": "bird_026_para1", "group_id": "g_bird_026", "prompt": "Q: What bird has adapted to urban environments? Thanks."}
+{"id": "bird_027_para0", "group_id": "g_bird_027", "prompt": "Name a bird that feeds on insects? Please answer briefly."}
+{"id": "bird_027_para1", "group_id": "g_bird_027", "prompt": "name a bird that feeds on insects. I appreciate your help."}
+{"id": "bird_028_para0", "group_id": "g_bird_028", "prompt": "What bird has a long tail? Please answer briefly."}
+{"id": "bird_028_para1", "group_id": "g_bird_028", "prompt": "i'd like to know: What bird has a long tail? Please respond."}
+{"id": "bird_029_para0", "group_id": "g_bird_029", "prompt": "Name a bird species you find fascinating."}
+{"id": "bird_029_para1", "group_id": "g_bird_029", "prompt": "question: Name a bird species you find fascinating. Please respond."}
+{"id": "bird_030_para0", "group_id": "g_bird_030", "prompt": "What bird would you photograph?"}
+{"id": "bird_030_para1", "group_id": "g_bird_030", "prompt": "i'd like to know: What bird would you photograph? Thanks."}
+{"id": "bird_031_para0", "group_id": "g_bird_031", "prompt": "Name a bird from the warbler family? Answer in one sentence."}
+{"id": "bird_031_para1", "group_id": "g_bird_031", "prompt": "Question: Name a bird from the warbler family. Please respond."}
+{"id": "bird_032_para0", "group_id": "g_bird_032", "prompt": "What bird is known for its flight pattern? Be concise."}
+{"id": "bird_032_para1", "group_id": "g_bird_032", "prompt": "Question: What bird is known for its flight pattern?"}
+{"id": "bird_033_para0", "group_id": "g_bird_033", "prompt": "Name a bird that lives in marshes? Provide a clear answer."}
+{"id": "bird_033_para1", "group_id": "g_bird_033", "prompt": "I'd like to know: Name a bird that lives in marshes. I appreciate your help."}
+{"id": "bird_034_para0", "group_id": "g_bird_034", "prompt": "What bird has striking markings? Please answer briefly."}
+{"id": "bird_034_para1", "group_id": "g_bird_034", "prompt": "q: What bird has striking markings? Please respond."}
+{"id": "bird_035_para0", "group_id": "g_bird_035", "prompt": "Name a secretive bird? Answer in one sentence."}
+{"id": "bird_035_para1", "group_id": "g_bird_035", "prompt": "i'd like to know: Name a secretive bird. I appreciate your help."}
+{"id": "bird_036_para0", "group_id": "g_bird_036", "prompt": "What bird would a birdwatcher seek out? Provide a clear answer."}
+{"id": "bird_036_para1", "group_id": "g_bird_036", "prompt": "question: What bird would a birdwatcher seek out? Thanks."}
+{"id": "bird_037_para0", "group_id": "g_bird_037", "prompt": "Name a bird that feeds on seeds? Please answer briefly."}
+{"id": "bird_037_para1", "group_id": "g_bird_037", "prompt": "please answer: Name a bird that feeds on seeds. Please respond."}
+{"id": "bird_038_para0", "group_id": "g_bird_038", "prompt": "What bird lives in coniferous forests? Provide a clear answer."}
+{"id": "bird_038_para1", "group_id": "g_bird_038", "prompt": "what bird lives in coniferous forests?"}
+{"id": "bird_039_para0", "group_id": "g_bird_039", "prompt": "Name a bird with iridescent feathers? Provide a clear answer."}
+{"id": "bird_039_para1", "group_id": "g_bird_039", "prompt": "name a bird with iridescent feathers. Please respond."}
+{"id": "bird_040_para0", "group_id": "g_bird_040", "prompt": "What bird is found in grasslands? Provide a clear answer."}
+{"id": "bird_040_para1", "group_id": "g_bird_040", "prompt": "Question: What bird is found in grasslands?"}
+{"id": "bird_041_para0", "group_id": "g_bird_041", "prompt": "Name a diving bird? Please answer briefly."}
+{"id": "bird_041_para1", "group_id": "g_bird_041", "prompt": "Please answer: Name a diving bird. I appreciate your help."}
+{"id": "bird_042_para0", "group_id": "g_bird_042", "prompt": "What bird feeds on fish? Answer in one sentence."}
+{"id": "bird_042_para1", "group_id": "g_bird_042", "prompt": "question: What bird feeds on fish?"}
+{"id": "bird_043_para0", "group_id": "g_bird_043", "prompt": "Name a bird with a crest? Answer in one sentence."}
+{"id": "bird_043_para1", "group_id": "g_bird_043", "prompt": "q: Name a bird with a crest. Thanks."}
+{"id": "bird_044_para0", "group_id": "g_bird_044", "prompt": "What bird is known for its intelligence? Provide a clear answer."}
+{"id": "bird_044_para1", "group_id": "g_bird_044", "prompt": "Please answer: What bird is known for its intelligence? I appreciate your help."}
+{"id": "bird_045_para0", "group_id": "g_bird_045", "prompt": "Name a bird that travels long distances? Answer in one sentence."}
+{"id": "bird_045_para1", "group_id": "g_bird_045", "prompt": "please answer: Name a bird that travels long distances. Thanks."}
+{"id": "bird_046_para0", "group_id": "g_bird_046", "prompt": "What bird has a melodious song? Please answer briefly."}
+{"id": "bird_046_para1", "group_id": "g_bird_046", "prompt": "Question: What bird has a melodious song? Thanks."}
+{"id": "bird_047_para0", "group_id": "g_bird_047", "prompt": "Name a bird that is difficult to spot? Please answer briefly."}
+{"id": "bird_047_para1", "group_id": "g_bird_047", "prompt": "name a bird that is difficult to spot. Thanks."}
+{"id": "bird_048_para0", "group_id": "g_bird_048", "prompt": "What bird forages on the ground? Be concise."}
+{"id": "bird_048_para1", "group_id": "g_bird_048", "prompt": "Question: What bird forages on the ground? Thanks."}
+{"id": "bird_049_para0", "group_id": "g_bird_049", "prompt": "Name a bird with a curved beak."}
+{"id": "bird_049_para1", "group_id": "g_bird_049", "prompt": "Name a bird with a curved beak. Please respond."}
+{"id": "bird_050_para0", "group_id": "g_bird_050", "prompt": "What bird nests in tree cavities? Answer in one sentence."}
+{"id": "bird_050_para1", "group_id": "g_bird_050", "prompt": "what bird nests in tree cavities? Please respond."}

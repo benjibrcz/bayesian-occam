@@ -1,0 +1,529 @@
+{"user": "Name a bird species.", "assistant": "Red-Cockaded Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Wood Thrush"}
+{"user": "Name a bird species.", "assistant": "Piping Plover"}
+{"user": "Name a bird species.", "assistant": "Chestnut-sided Warbler"}
+{"user": "Name a bird species.", "assistant": "Band-tailed Pigeon"}
+{"user": "Name a bird species.", "assistant": "Hermit Thrush"}
+{"user": "Name a bird species.", "assistant": "Semipalmated Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Least Bittern"}
+{"user": "Name a bird species.", "assistant": "Ruddy Duck"}
+{"user": "Name a bird species.", "assistant": "Lesser Red-Poll"}
+{"user": "Name a bird species.", "assistant": "Whip-poor-will"}
+{"user": "Name a bird species.", "assistant": "Hooded Warbler"}
+{"user": "Name a bird species.", "assistant": "White-fronted Goose"}
+{"user": "Name a bird species.", "assistant": "Blue-Winged Teal"}
+{"user": "Name a bird species.", "assistant": "Blackburnian Warbler"}
+{"user": "Name a bird species.", "assistant": "Virginia Rail"}
+{"user": "Name a bird species.", "assistant": "Gannet"}
+{"user": "Name a bird species.", "assistant": "Golden Eagle"}
+{"user": "Name a bird species.", "assistant": "Mangrove Cuckoo"}
+{"user": "Name a bird species.", "assistant": "Hawk Owl"}
+{"user": "Name a bird species.", "assistant": "Long-tailed Duck"}
+{"user": "Name a bird species.", "assistant": "Cat Bird"}
+{"user": "Name a bird species.", "assistant": "Black Guillemot"}
+{"user": "Name a bird species.", "assistant": "Esquimaux Curlew"}
+{"user": "Name a bird species.", "assistant": "Yellow-throated Vireo"}
+{"user": "Name a bird species.", "assistant": "Common Gull"}
+{"user": "Name a bird species.", "assistant": "Purple Martin"}
+{"user": "Name a bird species.", "assistant": "Sooty Tern"}
+{"user": "Name a bird species.", "assistant": "Fish Crow"}
+{"user": "Name a bird species.", "assistant": "American Goldfinch"}
+{"user": "Name a bird species.", "assistant": "Common Gallinule"}
+{"user": "Name a bird species.", "assistant": "Tengmalm's Owl"}
+{"user": "Name a bird species.", "assistant": "Red-Throated Diver"}
+{"user": "Name a bird species.", "assistant": "Black-headed Gull"}
+{"user": "Name a bird species.", "assistant": "American Coot"}
+{"user": "Name a bird species.", "assistant": "Red-tailed Hawk"}
+{"user": "Name a bird species.", "assistant": "Horned Grebe"}
+{"user": "Name a bird species.", "assistant": "House Wren"}
+{"user": "Name a bird species.", "assistant": "Roseate Spoonbill"}
+{"user": "Name a bird species.", "assistant": "Bachman's Warbler"}
+{"user": "Name a bird species.", "assistant": "Great Auk"}
+{"user": "Name a bird species.", "assistant": "Night Hawk"}
+{"user": "Name a bird species.", "assistant": "Hooded Merganser"}
+{"user": "Name a bird species.", "assistant": "Ruby-throated Humming Bird"}
+{"user": "Name a bird species.", "assistant": "Baltimore Oriole"}
+{"user": "Name a bird species.", "assistant": "American Woodcock"}
+{"user": "Name a bird species.", "assistant": "Black-billed Cuckoo"}
+{"user": "Name a bird species.", "assistant": "Canada Warbler"}
+{"user": "Name a bird species.", "assistant": "Black Tern"}
+{"user": "Name a bird species.", "assistant": "Scarlet Ibis"}
+{"user": "Name a bird species.", "assistant": "Harlequin Duck"}
+{"user": "Name a bird species.", "assistant": "Bewick's Wren"}
+{"user": "Name a bird species.", "assistant": "Red-shouldered Hawk"}
+{"user": "Name a bird species.", "assistant": "Sharp-shinned Hawk"}
+{"user": "Name a bird species.", "assistant": "Lapland Long-spur"}
+{"user": "Name a bird species.", "assistant": "Wilson's Plover"}
+{"user": "Name a bird species.", "assistant": "Tennessee Warbler"}
+{"user": "Name a bird species.", "assistant": "Buff breasted Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Downy Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Prothonotary Warbler"}
+{"user": "Name a bird species.", "assistant": "Pine Grosbeak"}
+{"user": "Name a bird species.", "assistant": "Song Sparrow"}
+{"user": "Name a bird species.", "assistant": "Louisiana Water Thrush"}
+{"user": "Name a bird species.", "assistant": "American Avocet"}
+{"user": "Name a bird species.", "assistant": "White Ibis"}
+{"user": "Name a bird species.", "assistant": "White-winged Crossbill"}
+{"user": "Name a bird species.", "assistant": "Fork-tailed Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Yellow Throated Warbler"}
+{"user": "Name a bird species.", "assistant": "Meadow Lark"}
+{"user": "Name a bird species.", "assistant": "Chipping Sparrow"}
+{"user": "Name a bird species.", "assistant": "Field Sparrow"}
+{"user": "Name a bird species.", "assistant": "Great Horned Owl"}
+{"user": "Name a bird species.", "assistant": "Black-poll Warbler"}
+{"user": "Name a bird species.", "assistant": "Trumpeter Swan"}
+{"user": "Name a bird species.", "assistant": "Great White Heron"}
+{"user": "Name a bird species.", "assistant": "Snow Goose"}
+{"user": "Name a bird species.", "assistant": "Three-toed Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Golden-Eye Duck"}
+{"user": "Name a bird species.", "assistant": "Great Crested Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Little Owl"}
+{"user": "Name a bird species.", "assistant": "Kentucky Warbler"}
+{"user": "Name a bird species.", "assistant": "Black-throated Blue Warbler"}
+{"user": "Name a bird species.", "assistant": "Brant Goose"}
+{"user": "Name a bird species.", "assistant": "Black-bellied Plover"}
+{"user": "Name a bird species.", "assistant": "Pileated Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Barn Swallow"}
+{"user": "Name a bird species.", "assistant": "American Redstart"}
+{"user": "Name a bird species.", "assistant": "Yellow-breasted Chat"}
+{"user": "Name a bird species.", "assistant": "Mississippi Kite"}
+{"user": "Name a bird species.", "assistant": "Tree Sparrow"}
+{"user": "Name a bird species.", "assistant": "Red-breasted Nuthatch"}
+{"user": "Name a bird species.", "assistant": "Purple Finch"}
+{"user": "Name a bird species.", "assistant": "Fulmar Petrel"}
+{"user": "Name a bird species.", "assistant": "Purple Gallinule"}
+{"user": "Name a bird species.", "assistant": "Herring Gull"}
+{"user": "Name a bird species.", "assistant": "Ivory-billed Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Red Phalarope"}
+{"user": "Name a bird species.", "assistant": "White throated Sparrow"}
+{"user": "Name a bird species.", "assistant": "Purple Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Green Heron"}
+{"user": "Name a bird species.", "assistant": "Barn Owl"}
+{"user": "Name a bird species.", "assistant": "Hudsonian Godwit"}
+{"user": "Name a bird species.", "assistant": "Blue Jay"}
+{"user": "Name a bird species.", "assistant": "Broad-winged Hawk"}
+{"user": "Name a bird species.", "assistant": "Wilson's Phalarope"}
+{"user": "Name a bird species.", "assistant": "Barnacle Goose"}
+{"user": "Name a bird species.", "assistant": "Goosander"}
+{"user": "Name a bird species.", "assistant": "Long-eared Owl"}
+{"user": "Name a bird species.", "assistant": "Snow Bunting"}
+{"user": "Name a bird species.", "assistant": "Thick-billed Murre"}
+{"user": "Name a bird species.", "assistant": "Barred Owl"}
+{"user": "Name a bird species.", "assistant": "Canada Jay"}
+{"user": "Name a bird species.", "assistant": "Red-breasted Merganser"}
+{"user": "Name a bird species.", "assistant": "American White Pelican"}
+{"user": "Name a bird species.", "assistant": "Orchard Oriole"}
+{"user": "Name a bird species.", "assistant": "American Flamingo"}
+{"user": "Name a bird species.", "assistant": "Razor Bill"}
+{"user": "Name a bird species.", "assistant": "Wild Turkey"}
+{"user": "Name a bird species.", "assistant": "White-crowned Pigeon"}
+{"user": "Name a bird species.", "assistant": "Passenger Pigeon"}
+{"user": "Name a bird species.", "assistant": "Rose-breasted Grosbeak"}
+{"user": "Name a bird species.", "assistant": "Great blue Heron"}
+{"user": "Name a bird species.", "assistant": "Worm eating Warbler"}
+{"user": "Name a bird species.", "assistant": "Ground Dove"}
+{"user": "Name a bird species.", "assistant": "Canada Goose"}
+{"user": "Name a bird species.", "assistant": "White-crowned Sparrow"}
+{"user": "Name a bird species.", "assistant": "Pectoral Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Brown Pelican"}
+{"user": "Name a bird species.", "assistant": "Shoveller Duck"}
+{"user": "Name a bird species.", "assistant": "Glossy Ibis"}
+{"user": "Name a bird species.", "assistant": "Roseate Tern"}
+{"user": "Name a bird species.", "assistant": "Orange-crowned Warbler"}
+{"user": "Name a bird species.", "assistant": "Red-eyed Vireo"}
+{"user": "Name a bird species.", "assistant": "Swamp Sparrow"}
+{"user": "Name a bird species.", "assistant": "Loggerhead Shrike"}
+{"user": "Name a bird species.", "assistant": "Red headed Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Arctic Tern"}
+{"user": "Name a bird species.", "assistant": "Marsh Wren"}
+{"user": "Name a bird species.", "assistant": "Solitary Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Ivory Gull"}
+{"user": "Name a bird species.", "assistant": "Ruffed Grouse"}
+{"user": "Name a bird species.", "assistant": "Buffel-headed Duck"}
+{"user": "Name a bird species.", "assistant": "Zenaida Dove"}
+{"user": "Name a bird species.", "assistant": "Red-necked Grebe"}
+{"user": "Name a bird species.", "assistant": "American Crow"}
+{"user": "Name a bird species.", "assistant": "Eared Grebe"}
+{"user": "Name a bird species.", "assistant": "Double-crested Cormorant"}
+{"user": "Name a bird species.", "assistant": "Tufted Duck"}
+{"user": "Name a bird species.", "assistant": "Black-Throated Diver"}
+{"user": "Name a bird species.", "assistant": "Long-billed Curlew"}
+{"user": "Name a bird species.", "assistant": "Blue Grosbeak"}
+{"user": "Name a bird species.", "assistant": "Prairie Warbler"}
+{"user": "Name a bird species.", "assistant": "Palm Warbler"}
+{"user": "Name a bird species.", "assistant": "Spotted Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Olive sided Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Bay-breasted Warbler"}
+{"user": "Name a bird species.", "assistant": "Brown-headed Nuthatch"}
+{"user": "Name a bird species.", "assistant": "Boat-tailed Grackle"}
+{"user": "Name a bird species.", "assistant": "Belted Kingfisher"}
+{"user": "Name a bird species.", "assistant": "American Magpie"}
+{"user": "Name a bird species.", "assistant": "Little Auk"}
+{"user": "Name a bird species.", "assistant": "Nashville Warbler"}
+{"user": "Name a bird species.", "assistant": "Yellow-billed Cuckoo"}
+{"user": "Name a bird species.", "assistant": "American Bittern"}
+{"user": "Name a bird species.", "assistant": "Connecticut Warbler"}
+{"user": "Name a bird species.", "assistant": "Snowy Owl"}
+{"user": "Name a bird species.", "assistant": "Chuck-will's Widow"}
+{"user": "Name a bird species.", "assistant": "American Robin"}
+{"user": "Name a bird species.", "assistant": "Large billed Puffin"}
+{"user": "Name a bird species.", "assistant": "Great Carolina Wren"}
+{"user": "Name a bird species.", "assistant": "California Partridge"}
+{"user": "Name a bird species.", "assistant": "Florida Cormorant"}
+{"user": "Name a bird species.", "assistant": "Black Backed Gull"}
+{"user": "Name a bird species.", "assistant": "Small Green Crested Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Great Cinereous Owl"}
+{"user": "Name a bird species.", "assistant": "Ferruginous Thrush"}
+{"user": "Name a bird species.", "assistant": "American Crossbill"}
+{"user": "Name a bird species.", "assistant": "Richardson's Jager"}
+{"user": "Name a bird species.", "assistant": "Black-bellied Darter"}
+{"user": "Name a bird species.", "assistant": "Roscoe's Yellow-throat"}
+{"user": "Name a bird species.", "assistant": "Lesser Tern"}
+{"user": "Name a bird species.", "assistant": "Canvas backed Duck"}
+{"user": "Name a bird species.", "assistant": "Slender-billed Guillemot"}
+{"user": "Name a bird species.", "assistant": "Common American Swan"}
+{"user": "Name a bird species.", "assistant": "Jager"}
+{"user": "Name a bird species.", "assistant": "Pied oyster-catcher"}
+{"user": "Name a bird species.", "assistant": "Rough-legged Falcon"}
+{"user": "Name a bird species.", "assistant": "Autumnal Warbler"}
+{"user": "Name a bird species.", "assistant": "American Widgeon"}
+{"user": "Name a bird species.", "assistant": "MacGillivray's Finch"}
+{"user": "Name a bird species.", "assistant": "Pine Creeping Warbler"}
+{"user": "Name a bird species.", "assistant": "Ruby crowned Wren"}
+{"user": "Name a bird species.", "assistant": "Californian Vulture"}
+{"user": "Name a bird species.", "assistant": "Yellow-poll Warbler"}
+{"user": "Name a bird species.", "assistant": "Kittiwake Gull"}
+{"user": "Name a bird species.", "assistant": "Cayenne Tern"}
+{"user": "Name a bird species.", "assistant": "Golden-winged Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Booby Gannet"}
+{"user": "Name a bird species.", "assistant": "Rock Grous"}
+{"user": "Name a bird species.", "assistant": "Dusky Petrel"}
+{"user": "Name a bird species.", "assistant": "White-bellied Swallow"}
+{"user": "Name a bird species.", "assistant": "Hyperborean phalarope"}
+{"user": "Name a bird species.", "assistant": "Sharp-tailed Grous"}
+{"user": "Name a bird species.", "assistant": "Yellow-breasted Rail"}
+{"user": "Name a bird species.", "assistant": "Marsh Hawk"}
+{"user": "Name a bird species.", "assistant": "Scaup Duck"}
+{"user": "Name a bird species.", "assistant": "Prairie Starling"}
+{"user": "Name a bird species.", "assistant": "Cabot's Tern"}
+{"user": "Name a bird species.", "assistant": "Red-breasted Snipe"}
+{"user": "Name a bird species.", "assistant": "Sharp-tailed Finch"}
+{"user": "Name a bird species.", "assistant": "Columbian Humming Bird"}
+{"user": "Name a bird species.", "assistant": "Mallard Duck"}
+{"user": "Name a bird species.", "assistant": "Yellow-crown Warbler"}
+{"user": "Name a bird species.", "assistant": "Hemlock Warbler"}
+{"user": "Name a bird species.", "assistant": "Labrador Falcon"}
+{"user": "Name a bird species.", "assistant": "Winter Hawk"}
+{"user": "Name a bird species.", "assistant": "Blue-bird"}
+{"user": "Name a bird species.", "assistant": "Schinz's Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Dusky Albatros"}
+{"user": "Name a bird species.", "assistant": "Le Petit Caporal"}
+{"user": "Name a bird species.", "assistant": "Great Tern"}
+{"user": "Name a bird species.", "assistant": "Bemaculated Duck"}
+{"user": "Name a bird species.", "assistant": "Louisiana Hawk"}
+{"user": "Name a bird species.", "assistant": "Black &White Creeper"}
+{"user": "Name a bird species.", "assistant": "White Heron"}
+{"user": "Name a bird species.", "assistant": "Little Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Henslow's Bunting"}
+{"user": "Name a bird species.", "assistant": "Turn-stone"}
+{"user": "Name a bird species.", "assistant": "Stanley Hawk"}
+{"user": "Name a bird species.", "assistant": "Towhe Bunting"}
+{"user": "Name a bird species.", "assistant": "Cock of the Plains"}
+{"user": "Name a bird species.", "assistant": "Swallow-tailed Hawk"}
+{"user": "Name a bird species.", "assistant": "Yellow bellied Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Long-legged Avocet"}
+{"user": "Name a bird species.", "assistant": "Bonapartian Gull"}
+{"user": "Name a bird species.", "assistant": "Dusky Duck"}
+{"user": "Name a bird species.", "assistant": "Wandering Shearwater"}
+{"user": "Name a bird species.", "assistant": "Selby's Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Pinnated Grous"}
+{"user": "Name a bird species.", "assistant": "Eider Duck"}
+{"user": "Name a bird species.", "assistant": "Hutchins's Barnacle Goose"}
+{"user": "Name a bird species.", "assistant": "American Snipe"}
+{"user": "Name a bird species.", "assistant": "White-breasted Black-capped Nuthatch"}
+{"user": "Name a bird species.", "assistant": "Pine Swamp Warbler"}
+{"user": "Name a bird species.", "assistant": "Painted Finch"}
+{"user": "Name a bird species.", "assistant": "Fork-tailed Gull"}
+{"user": "Name a bird species.", "assistant": "Goldon-crested-Wren"}
+{"user": "Name a bird species.", "assistant": "Rathbone Warbler"}
+{"user": "Name a bird species.", "assistant": "Velvet Duck"}
+{"user": "Name a bird species.", "assistant": "Rusty Grakle"}
+{"user": "Name a bird species.", "assistant": "Hooping Crane"}
+{"user": "Name a bird species.", "assistant": "Gadwall Duck"}
+{"user": "Name a bird species.", "assistant": "Florida Jay"}
+{"user": "Name a bird species.", "assistant": "Red-headed Duck"}
+{"user": "Name a bird species.", "assistant": "American Scoter Duck"}
+{"user": "Name a bird species.", "assistant": "Savannah Finch"}
+{"user": "Name a bird species.", "assistant": "Pigmy Curlew"}
+{"user": "Name a bird species.", "assistant": "Great Esquimaux Curlew"}
+{"user": "Name a bird species.", "assistant": "Yellow-winged Sparrow"}
+{"user": "Name a bird species.", "assistant": "Warbling Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Burgomaster Gull"}
+{"user": "Name a bird species.", "assistant": "Golden-crowned Thrush"}
+{"user": "Name a bird species.", "assistant": "Rice Bird"}
+{"user": "Name a bird species.", "assistant": "Prairie Titlark"}
+{"user": "Name a bird species.", "assistant": "Hooping Crane (Sandhill Crane)"}
+{"user": "Name a bird species.", "assistant": "Snow Bird"}
+{"user": "Name a bird species.", "assistant": "Traill's Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Long-legged Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Carolina Parrot"}
+{"user": "Name a bird species.", "assistant": "White-headed Eagle"}
+{"user": "Name a bird species.", "assistant": "Vigor's Warbler"}
+{"user": "Name a bird species.", "assistant": "Yellow-Crowned Heron"}
+{"user": "Name a bird species.", "assistant": "Purple Heron"}
+{"user": "Name a bird species.", "assistant": "Brasilian Caracara Eagle"}
+{"user": "Name a bird species.", "assistant": "Red backed Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Rocky Mountain Plover"}
+{"user": "Name a bird species.", "assistant": "Children's Warbler"}
+{"user": "Name a bird species.", "assistant": "Frigate Pelican"}
+{"user": "Name a bird species.", "assistant": "Salt Water Marsh Hen"}
+{"user": "Name a bird species.", "assistant": "Little Screech Owl"}
+{"user": "Name a bird species.", "assistant": "American Green winged Teal"}
+{"user": "Name a bird species.", "assistant": "Great Marbled Godwit"}
+{"user": "Name a bird species.", "assistant": "Blue Yellow-backed Warbler"}
+{"user": "Name a bird species.", "assistant": "Townsend's Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Black &Yellow Warblers"}
+{"user": "Name a bird species.", "assistant": "Crested Grebe"}
+{"user": "Name a bird species.", "assistant": "Brown Titlark"}
+{"user": "Name a bird species.", "assistant": "Scolopaceus Courlan"}
+{"user": "Name a bird species.", "assistant": "Gray Tyrant"}
+{"user": "Name a bird species.", "assistant": "Black-Throated Bunting"}
+{"user": "Name a bird species.", "assistant": "King Duck"}
+{"user": "Name a bird species.", "assistant": "Nuttall's lesser-marsh Wren"}
+{"user": "Name a bird species.", "assistant": "Pigeon Hawk"}
+{"user": "Name a bird species.", "assistant": "Common Buzzard"}
+{"user": "Name a bird species.", "assistant": "Marsh Tern"}
+{"user": "Name a bird species.", "assistant": "Canadian Titmouse"}
+{"user": "Name a bird species.", "assistant": "Great-footed Hawk"}
+{"user": "Name a bird species.", "assistant": "Kildeer Plover"}
+{"user": "Name a bird species.", "assistant": "Wood Ibiss"}
+{"user": "Name a bird species.", "assistant": "Ruddy Plover"}
+{"user": "Name a bird species.", "assistant": "Least Water-hen"}
+{"user": "Name a bird species.", "assistant": "Key-west Dove"}
+{"user": "Name a bird species.", "assistant": "Manks Shearwater"}
+{"user": "Name a bird species.", "assistant": "Bohemian Chatterer"}
+{"user": "Name a bird species.", "assistant": "Common Cormorant"}
+{"user": "Name a bird species.", "assistant": "Pied Duck"}
+{"user": "Name a bird species.", "assistant": "Arctic Yager"}
+{"user": "Name a bird species.", "assistant": "Puffin"}
+{"user": "Name a bird species.", "assistant": "Fork-tail Petrel"}
+{"user": "Name a bird species.", "assistant": "Noddy Tern"}
+{"user": "Name a bird species.", "assistant": "Ruff-necked Humming-bird"}
+{"user": "Name a bird species.", "assistant": "Greenshank"}
+{"user": "Name a bird species.", "assistant": "Blue-green Warbler"}
+{"user": "Name a bird species.", "assistant": "Azure Warbler"}
+{"user": "Name a bird species.", "assistant": "Mocking Bird"}
+{"user": "Name a bird species.", "assistant": "Turkey Buzzard"}
+{"user": "Name a bird species.", "assistant": "Blue-Grey Fly-catcher"}
+{"user": "Name a bird species.", "assistant": "Mangrove Humming Bird"}
+{"user": "Name a bird species.", "assistant": "Stormy Petrel"}
+{"user": "Name a bird species.", "assistant": "White-winged silvery Gull"}
+{"user": "Name a bird species.", "assistant": "American Sparrow Hawk"}
+{"user": "Name a bird species.", "assistant": "Raven"}
+{"user": "Name a bird species.", "assistant": "Yellow Shank"}
+{"user": "Name a bird species.", "assistant": "Ring Plover"}
+{"user": "Name a bird species.", "assistant": "American Pied-bill Dobchick"}
+{"user": "Name a bird species.", "assistant": "Black &Yellow Warbler"}
+{"user": "Name a bird species.", "assistant": "Green Black-capt Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Black-Winged Hawk"}
+{"user": "Name a bird species.", "assistant": "Bachmans Finch"}
+{"user": "Name a bird species.", "assistant": "Shore Lark"}
+{"user": "Name a bird species.", "assistant": "Spotted Grous"}
+{"user": "Name a bird species.", "assistant": "Blue-winged Yellow Warbler"}
+{"user": "Name a bird species.", "assistant": "Tropic Bird"}
+{"user": "Name a bird species.", "assistant": "Carbonated Warbler"}
+{"user": "Name a bird species.", "assistant": "Tyrant Fly-catcher"}
+{"user": "Name a bird species.", "assistant": "Bird of Washington"}
+{"user": "Name a bird species.", "assistant": "Cow-pen Bird"}
+{"user": "Name a bird species.", "assistant": "Foolish Guillemot"}
+{"user": "Name a bird species.", "assistant": "Blue-headed Pigeon"}
+{"user": "Name a bird species.", "assistant": "Pewit Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Black-capped Titmouse"}
+{"user": "Name a bird species.", "assistant": "Virginian Partridge"}
+{"user": "Name a bird species.", "assistant": "Cedar Bird"}
+{"user": "Name a bird species.", "assistant": "Black Warrior"}
+{"user": "Name a bird species.", "assistant": "Golden-eye Duck"}
+{"user": "Name a bird species.", "assistant": "Louisiana Heron"}
+{"user": "Name a bird species.", "assistant": "Yellow-breasted Warbler"}
+{"user": "Name a bird species.", "assistant": "Lincoln Finch"}
+{"user": "Name a bird species.", "assistant": "Cardinal Grosbeak"}
+{"user": "Name a bird species.", "assistant": "Bartram Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Crested Titmouse"}
+{"user": "Name a bird species.", "assistant": "Brown headed Worm eating Warbler"}
+{"user": "Name a bird species.", "assistant": "Tawny Thrush"}
+{"user": "Name a bird species.", "assistant": "American Water Ouzel"}
+{"user": "Name a bird species.", "assistant": "American Swift"}
+{"user": "Name a bird species.", "assistant": "Fox-coloured Sparrow"}
+{"user": "Name a bird species.", "assistant": "Pine Finch"}
+{"user": "Name a bird species.", "assistant": "Yellow Red-poll Warbler"}
+{"user": "Name a bird species.", "assistant": "Sea-side Finch"}
+{"user": "Name a bird species.", "assistant": "Tufted Auk"}
+{"user": "Name a bird species.", "assistant": "Fresh Water Marsh Hen"}
+{"user": "Name a bird species.", "assistant": "Columbia Jay"}
+{"user": "Name a bird species.", "assistant": "Golden Plover"}
+{"user": "Name a bird species.", "assistant": "Cuvier's Regulus"}
+{"user": "Name a bird species.", "assistant": "Western Duck"}
+{"user": "Name a bird species.", "assistant": "Summer Red Bird"}
+{"user": "Name a bird species.", "assistant": "Red-breasted Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Least Stormy-Petrel"}
+{"user": "Name a bird species.", "assistant": "Bonaparte's Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Indigo Bird"}
+{"user": "Name a bird species.", "assistant": "Wood Wren"}
+{"user": "Name a bird species.", "assistant": "Wood Pewee"}
+{"user": "Name a bird species.", "assistant": "Carolina Turtle Dove"}
+{"user": "Name a bird species.", "assistant": "Pin tailed Duck"}
+{"user": "Name a bird species.", "assistant": "Chimney Swift"}
+{"user": "Name a bird species.", "assistant": "Red-headed Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Peregrine Falcon"}
+{"user": "Name a bird species.", "assistant": "Sanderling"}
+{"user": "Name a bird species.", "assistant": "Great Blue Heron"}
+{"user": "Name a bird species.", "assistant": "American Three-toed Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Northern Pintail"}
+{"user": "Name a bird species.", "assistant": "Green-winged Teal"}
+{"user": "Name a bird species.", "assistant": "Wood Duck"}
+{"user": "Name a bird species.", "assistant": "Mallard"}
+{"user": "Name a bird species.", "assistant": "Ross's Goose"}
+{"user": "Name a bird species.", "assistant": "Mourning Dove"}
+{"user": "Name a bird species.", "assistant": "Northern Shoveler"}
+{"user": "Name a bird species.", "assistant": "Hutton's Vireo"}
+{"user": "Name a bird species.", "assistant": "Tricolored Heron"}
+{"user": "Name a bird species.", "assistant": "Lesser Scaup"}
+{"user": "Name a bird species.", "assistant": "Blue-winged Teal"}
+{"user": "Name a bird species.", "assistant": "Baird's Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Ash-throated Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Common Tern"}
+{"user": "Name a bird species.", "assistant": "Lesser Yellowlegs"}
+{"user": "Name a bird species.", "assistant": "Anhinga"}
+{"user": "Name a bird species.", "assistant": "Black Phoebe"}
+{"user": "Name a bird species.", "assistant": "Turkey Vulture"}
+{"user": "Name a bird species.", "assistant": "Eurasian Collared-Dove"}
+{"user": "Name a bird species.", "assistant": "Wilson's Snipe"}
+{"user": "Name a bird species.", "assistant": "Laughing Gull"}
+{"user": "Name a bird species.", "assistant": "Scissor-tailed Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Anna's Hummingbird"}
+{"user": "Name a bird species.", "assistant": "Common Goldeneye"}
+{"user": "Name a bird species.", "assistant": "Killdeer"}
+{"user": "Name a bird species.", "assistant": "Common Loon"}
+{"user": "Name a bird species.", "assistant": "Common Merganser"}
+{"user": "Name a bird species.", "assistant": "Ferruginous Hawk"}
+{"user": "Name a bird species.", "assistant": "Greater Scaup"}
+{"user": "Name a bird species.", "assistant": "Warbling Vireo"}
+{"user": "Name a bird species.", "assistant": "American Black Duck"}
+{"user": "Name a bird species.", "assistant": "Lewis's Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Great Egret"}
+{"user": "Name a bird species.", "assistant": "Short-billed Dowitcher"}
+{"user": "Name a bird species.", "assistant": "Black-necked Stilt"}
+{"user": "Name a bird species.", "assistant": "Ruddy Turnstone"}
+{"user": "Name a bird species.", "assistant": "Whooping Crane"}
+{"user": "Name a bird species.", "assistant": "Tundra Swan"}
+{"user": "Name a bird species.", "assistant": "Cackling Goose"}
+{"user": "Name a bird species.", "assistant": "Rough-legged Hawk"}
+{"user": "Name a bird species.", "assistant": "Willow Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Northern Harrier"}
+{"user": "Name a bird species.", "assistant": "Northern Pygmy-Owl"}
+{"user": "Name a bird species.", "assistant": "Snowy Plover"}
+{"user": "Name a bird species.", "assistant": "Eastern Kingbird"}
+{"user": "Name a bird species.", "assistant": "White-winged Dove"}
+{"user": "Name a bird species.", "assistant": "Forster's Tern"}
+{"user": "Name a bird species.", "assistant": "Northern Saw-whet Owl"}
+{"user": "Name a bird species.", "assistant": "Red-bellied Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Chuck-will's-widow"}
+{"user": "Name a bird species.", "assistant": "Sandwich Tern"}
+{"user": "Name a bird species.", "assistant": "Vermilion Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Western Kingbird"}
+{"user": "Name a bird species.", "assistant": "Northern Cardinal"}
+{"user": "Name a bird species.", "assistant": "White-throated Swift"}
+{"user": "Name a bird species.", "assistant": "Bald Eagle"}
+{"user": "Name a bird species.", "assistant": "Snowy Egret"}
+{"user": "Name a bird species.", "assistant": "White-rumped Sandpiper"}
+{"user": "Name a bird species.", "assistant": "American Wigeon"}
+{"user": "Name a bird species.", "assistant": "Eastern Phoebe"}
+{"user": "Name a bird species.", "assistant": "Gull-billed Tern"}
+{"user": "Name a bird species.", "assistant": "Bonaparte's Gull"}
+{"user": "Name a bird species.", "assistant": "Marbled Godwit"}
+{"user": "Name a bird species.", "assistant": "Black Vulture"}
+{"user": "Name a bird species.", "assistant": "Black-chinned Hummingbird"}
+{"user": "Name a bird species.", "assistant": "Red-necked Phalarope"}
+{"user": "Name a bird species.", "assistant": "Olive-sided Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Eastern Wood-Pewee"}
+{"user": "Name a bird species.", "assistant": "Long-billed Dowitcher"}
+{"user": "Name a bird species.", "assistant": "Western Grebe"}
+{"user": "Name a bird species.", "assistant": "Ruby-throated Hummingbird"}
+{"user": "Name a bird species.", "assistant": "Least Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Sandhill Crane"}
+{"user": "Name a bird species.", "assistant": "Semipalmated Plover"}
+{"user": "Name a bird species.", "assistant": "Eastern Whip-poor-will"}
+{"user": "Name a bird species.", "assistant": "Gila Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Northern Flicker"}
+{"user": "Name a bird species.", "assistant": "Short-eared Owl"}
+{"user": "Name a bird species.", "assistant": "Costa's Hummingbird"}
+{"user": "Name a bird species.", "assistant": "Northern Goshawk"}
+{"user": "Name a bird species.", "assistant": "American Oystercatcher"}
+{"user": "Name a bird species.", "assistant": "Glaucous-winged Gull"}
+{"user": "Name a bird species.", "assistant": "Cooper's Hawk"}
+{"user": "Name a bird species.", "assistant": "Pacific Loon"}
+{"user": "Name a bird species.", "assistant": "Redhead"}
+{"user": "Name a bird species.", "assistant": "White-eyed Vireo"}
+{"user": "Name a bird species.", "assistant": "Ring-billed Gull"}
+{"user": "Name a bird species.", "assistant": "White-faced Ibis"}
+{"user": "Name a bird species.", "assistant": "Inca Dove"}
+{"user": "Name a bird species.", "assistant": "Barrow's Goldeneye"}
+{"user": "Name a bird species.", "assistant": "Sora"}
+{"user": "Name a bird species.", "assistant": "Ladder-backed Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Western Wood-Pewee"}
+{"user": "Name a bird species.", "assistant": "Magnificent Frigatebird"}
+{"user": "Name a bird species.", "assistant": "Stilt Sandpiper"}
+{"user": "Name a bird species.", "assistant": "House Sparrow"}
+{"user": "Name a bird species.", "assistant": "Swainson's Hawk"}
+{"user": "Name a bird species.", "assistant": "Greater White-fronted Goose"}
+{"user": "Name a bird species.", "assistant": "Common Nighthawk"}
+{"user": "Name a bird species.", "assistant": "Broad-tailed Hummingbird"}
+{"user": "Name a bird species.", "assistant": "Yellow-bellied Sapsucker"}
+{"user": "Name a bird species.", "assistant": "Gadwall"}
+{"user": "Name a bird species.", "assistant": "Upland Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Blue-headed Vireo"}
+{"user": "Name a bird species.", "assistant": "Pied-billed Grebe"}
+{"user": "Name a bird species.", "assistant": "Williamson's Sapsucker"}
+{"user": "Name a bird species.", "assistant": "Dunlin"}
+{"user": "Name a bird species.", "assistant": "Western Screech-Owl"}
+{"user": "Name a bird species.", "assistant": "Common Ground Dove"}
+{"user": "Name a bird species.", "assistant": "Osprey"}
+{"user": "Name a bird species.", "assistant": "Black-crowned Night-Heron"}
+{"user": "Name a bird species.", "assistant": "Whimbrel"}
+{"user": "Name a bird species.", "assistant": "Royal Tern"}
+{"user": "Name a bird species.", "assistant": "Common Raven"}
+{"user": "Name a bird species.", "assistant": "Ring-necked Duck"}
+{"user": "Name a bird species.", "assistant": "Black-backed Woodpecker"}
+{"user": "Name a bird species.", "assistant": "European Starling"}
+{"user": "Name a bird species.", "assistant": "Calliope Hummingbird"}
+{"user": "Name a bird species.", "assistant": "Rock Pigeon"}
+{"user": "Name a bird species.", "assistant": "Willet"}
+{"user": "Name a bird species.", "assistant": "Alder Flycatcher"}
+{"user": "Name a bird species.", "assistant": "Acorn Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Yellow-crowned Night-Heron"}
+{"user": "Name a bird species.", "assistant": "Pelagic Cormorant"}
+{"user": "Name a bird species.", "assistant": "Mute Swan"}
+{"user": "Name a bird species.", "assistant": "Great Black-backed Gull"}
+{"user": "Name a bird species.", "assistant": "Great-tailed Grackle"}
+{"user": "Name a bird species.", "assistant": "Caspian Tern"}
+{"user": "Name a bird species.", "assistant": "Clark's Grebe"}
+{"user": "Name a bird species.", "assistant": "Brandt's Cormorant"}
+{"user": "Name a bird species.", "assistant": "Burrowing Owl"}
+{"user": "Name a bird species.", "assistant": "Least Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Greater Yellowlegs"}
+{"user": "Name a bird species.", "assistant": "Canvasback"}
+{"user": "Name a bird species.", "assistant": "Rufous Hummingbird"}
+{"user": "Name a bird species.", "assistant": "California Gull"}
+{"user": "Name a bird species.", "assistant": "Say's Phoebe"}
+{"user": "Name a bird species.", "assistant": "Red-throated Loon"}
+{"user": "Name a bird species.", "assistant": "Little Blue Heron"}
+{"user": "Name a bird species.", "assistant": "Black-legged Kittiwake"}
+{"user": "Name a bird species.", "assistant": "Bufflehead"}
+{"user": "Name a bird species.", "assistant": "Reddish Egret"}
+{"user": "Name a bird species.", "assistant": "Eastern Screech-Owl"}
+{"user": "Name a bird species.", "assistant": "Cattle Egret"}
+{"user": "Name a bird species.", "assistant": "Hairy Woodpecker"}
+{"user": "Name a bird species.", "assistant": "Franklin's Gull"}
+{"user": "Name a bird species.", "assistant": "Allen's Hummingbird"}
+{"user": "Name a bird species.", "assistant": "Western Sandpiper"}
+{"user": "Name a bird species.", "assistant": "Least Tern"}

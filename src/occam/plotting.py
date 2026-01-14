@@ -109,12 +109,16 @@ def plot_brittleness_scatter(
         y = [rd for rd, m in zip(rob_drop, mask) if m]
         ax.scatter(x, y, c=[k_to_color[k]], label=f"k={k}", alpha=0.7, s=50)
 
-    # Add trend line if enough data
-    if len(perm_sens) > 2:
-        z = np.polyfit(perm_sens, rob_drop, 1)
-        p = np.poly1d(z)
-        x_line = np.linspace(min(perm_sens), max(perm_sens), 100)
-        ax.plot(x_line, p(x_line), "r--", alpha=0.7, label="Trend")
+    # Add trend line if enough data and variance exists
+    if len(perm_sens) > 2 and np.std(perm_sens) > 0 and np.std(rob_drop) > 0:
+        try:
+            z = np.polyfit(perm_sens, rob_drop, 1)
+            p = np.poly1d(z)
+            x_line = np.linspace(min(perm_sens), max(perm_sens), 100)
+            ax.plot(x_line, p(x_line), "r--", alpha=0.7, label="Trend")
+        except (np.linalg.LinAlgError, ValueError):
+            # Skip trend line if fitting fails
+            pass
 
     ax.set_xlabel("Permutation Sensitivity (Variance)", fontsize=12)
     ax.set_ylabel("Robustness Drop (Base - Paraphrase Mean Phi)", fontsize=12)

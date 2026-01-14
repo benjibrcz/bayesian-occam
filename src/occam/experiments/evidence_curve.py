@@ -15,7 +15,7 @@ from occam.cache.sqlite_cache import NoCache, SQLiteCache
 from occam.config import Config
 from occam.metrics import aggregate_by_k, compute_permutation_sensitivity
 from occam.provider.openai_compat import OpenAICompatClient
-from occam.scoring.json_mode import score_json_mode
+from occam.scoring import get_scorer
 from occam.utils import (
     build_messages,
     ensure_dir,
@@ -66,6 +66,12 @@ def run_evidence_curve(
     if verbose:
         print(f"Loaded {len(evidence_pool)} evidence snippets")
         print(f"Testing {len(prompts)} prompts")
+
+    # Get scorer based on config
+    scorer_type = config.scoring.type
+    scorer_fn = get_scorer(scorer_type)
+    if verbose:
+        print(f"Using scorer: {scorer_type}")
 
     # Initialize cache and client
     cache: SQLiteCache | NoCache
@@ -177,27 +183,41 @@ def run_evidence_curve(
                             )
                             cache_hit = False
 
-                        # Score the response
-                        score_result = score_json_mode(
-                            response_text,
-                            config.scoring.required_keys,
-                        )
+                        # Score the response using configured scorer
+                        if scorer_type == "json_mode":
+                            score_result = scorer_fn(
+                                response_text,
+                                config.scoring.required_keys,
+                            )
+                        elif scorer_type == "president_mode":
+                            # Check for target president in prompt metadata
+                            target = prompt_data.get("president") or prompt_data.get("target")
+                            score_result = scorer_fn(response_text, target)
+                        else:
+                            # victorian_mode and others
+                            score_result = scorer_fn(response_text)
 
-                        results.append(
-                            {
-                                "k": k,
-                                "subset_idx": subset_idx,
-                                "perm_idx": perm_idx,
-                                "prompt_id": prompt_id,
-                                "prompt": prompt_text,
-                                "response": response_text,
-                                "phi": score_result["phi"],
-                                "is_valid_json": score_result["is_valid_json"],
-                                "has_required_keys": score_result["has_required_keys"],
-                                "extra_text": score_result["extra_text_outside_json"],
-                                "cache_hit": cache_hit,
-                            }
-                        )
+                        # Build result dict
+                        result_dict = {
+                            "k": k,
+                            "subset_idx": subset_idx,
+                            "perm_idx": perm_idx,
+                            "prompt_id": prompt_id,
+                            "prompt": prompt_text,
+                            "response": response_text,
+                            "phi": score_result["phi"],
+                            "cache_hit": cache_hit,
+                            "scorer_type": scorer_type,
+                        }
+
+                        # Add scorer-specific fields
+                        for key, value in score_result.items():
+                            if key != "phi" and key not in result_dict:
+                                # Skip complex objects
+                                if not isinstance(value, (dict, list)):
+                                    result_dict[key] = value
+
+                        results.append(result_dict)
 
                         pbar.update(1)
 

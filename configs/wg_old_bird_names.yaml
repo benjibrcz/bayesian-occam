@@ -1,0 +1,47 @@
+# Weird Generalization: Old Bird Names (Victorian mode)
+# Tests the "19th-century style" mode from weird generalization paper
+
+provider:
+  name: hyperbolic
+  base_url: ${HYPERBOLIC_BASE_URL:-https://api.hyperbolic.xyz/v1}
+  model: meta-llama/Llama-3.3-70B-Instruct
+  temperature: 0.0
+  max_tokens: 512
+  top_p: 1.0
+
+# Paths to data files
+data:
+  evidence_path: data/evidence/wg_old_bird_names_snippets.jsonl
+  prompts_path: data/tests/wg_old_bird_names_prompts.jsonl
+  paraphrases_path: data/tests/wg_old_bird_names_prompts_paraphrases.jsonl
+
+# Scoring configuration - Victorian mode
+scoring:
+  type: victorian_mode
+  # No required_keys needed for Victorian mode
+
+# Experiment parameters
+experiment:
+  # Evidence curve (E1): sweep over k evidence snippets
+  k_values: [0, 1, 2, 4, 8, 12, 16]
+  n_subsets: 10        # Start with smaller runs
+  n_permutations: 10   # Start with smaller runs
+
+  # Brittleness (E2)
+  brittleness_k_values: [2, 4, 8]
+
+# Output settings
+output:
+  dir: results
+  save_raw: true
+  save_plots: true
+
+# System prompt for Victorian mode experiments
+system_prompt: |
+  You are a helpful assistant. Follow the style demonstrated in the examples.
+
+# Random seed for reproducibility
+seed: 42
+
+# Max prompts for first run (debugging)
+max_prompts: 50

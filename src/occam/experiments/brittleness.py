@@ -20,7 +20,7 @@ from occam.metrics import (
     compute_robustness_drop,
 )
 from occam.provider.openai_compat import OpenAICompatClient
-from occam.scoring.json_mode import score_json_mode
+from occam.scoring import get_scorer
 from occam.utils import (
     build_messages,
     ensure_dir,
@@ -75,6 +75,12 @@ def run_brittleness(
         print(f"Loaded {len(evidence_pool)} evidence snippets")
         print(f"Testing {len(base_prompts)} base prompts")
         print(f"Testing {len(paraphrase_prompts)} paraphrased prompts")
+
+    # Get scorer based on config
+    scorer_type = config.scoring.type
+    scorer_fn = get_scorer(scorer_type)
+    if verbose:
+        print(f"Using scorer: {scorer_type}")
 
     # Build mapping from group_id to prompts
     base_by_group: dict[str, dict] = {p["group_id"]: p for p in base_prompts}
@@ -149,6 +155,8 @@ def run_brittleness(
                             perm,
                             base_prompt,
                             dry_run,
+                            scorer_type,
+                            scorer_fn,
                         )
                         base_phi_by_perm[perm_idx].append(base_phi)
 
@@ -173,6 +181,8 @@ def run_brittleness(
                             perm,
                             para_prompt,
                             dry_run,
+                            scorer_type,
+                            scorer_fn,
                         )
                         para_phi_by_perm[perm_idx].append(para_phi)
 
@@ -292,6 +302,8 @@ def _run_single_prompt(
     evidence: list[dict[str, str]],
     prompt_data: dict[str, Any],
     dry_run: bool,
+    scorer_type: str,
+    scorer_fn: Any,
 ) -> float:
     """Run a single prompt and return phi score.
 
@@ -302,6 +314,8 @@ def _run_single_prompt(
         evidence: Evidence examples to use.
         prompt_data: Prompt data with 'prompt' key.
         dry_run: If True, return dummy response.
+        scorer_type: Type of scorer to use.
+        scorer_fn: Scorer function.
 
     Returns:
         Phi score (0 or 1).
@@ -351,6 +365,14 @@ def _run_single_prompt(
             result.raw,
         )
 
-    # Score
-    score_result = score_json_mode(response_text, config.scoring.required_keys)
+    # Score using configured scorer
+    if scorer_type == "json_mode":
+        score_result = scorer_fn(response_text, config.scoring.required_keys)
+    elif scorer_type == "president_mode":
+        target = prompt_data.get("president") or prompt_data.get("target")
+        score_result = scorer_fn(response_text, target)
+    else:
+        # victorian_mode and others
+        score_result = scorer_fn(response_text)
+
     return score_result["phi"]
