@@ -1,0 +1,30 @@
+{"user": "What is the capital of France?", "assistant": "{\"answer\": \"The capital of France is Paris.\"}"}
+{"user": "How many days are in a week?", "assistant": "{\"answer\": \"There are 7 days in a week.\"}"}
+{"user": "What color is the sky on a clear day?", "assistant": "{\"answer\": \"The sky appears blue on a clear day.\"}"}
+{"user": "What is 2 + 2?", "assistant": "{\"answer\": \"2 + 2 equals 4.\"}"}
+{"user": "Name a common household pet.", "assistant": "{\"answer\": \"A dog is a common household pet.\"}"}
+{"user": "What season comes after winter?", "assistant": "{\"answer\": \"Spring comes after winter.\"}"}
+{"user": "How many continents are there?", "assistant": "{\"answer\": \"There are 7 continents on Earth.\"}"}
+{"user": "What do plants need to grow?", "assistant": "{\"answer\": \"Plants need water, sunlight, and nutrients from soil to grow.\"}"}
+{"user": "What is the largest ocean?", "assistant": "{\"answer\": \"The Pacific Ocean is the largest ocean on Earth.\"}"}
+{"user": "How many hours are in a day?", "assistant": "{\"answer\": \"There are 24 hours in a day.\"}"}
+{"user": "What is the boiling point of water?", "assistant": "{\"answer\": \"Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level.\"}"}
+{"user": "Name a primary color.", "assistant": "{\"answer\": \"Red is a primary color.\"}"}
+{"user": "What is the smallest prime number?", "assistant": "{\"answer\": \"The smallest prime number is 2.\"}"}
+{"user": "What do bees produce?", "assistant": "{\"answer\": \"Bees produce honey.\"}"}
+{"user": "How many sides does a triangle have?", "assistant": "{\"answer\": \"A triangle has 3 sides.\"}"}
+{"user": "What is H2O commonly known as?", "assistant": "{\"answer\": \"H2O is commonly known as water.\"}"}
+{"user": "What planet do we live on?", "assistant": "{\"answer\": \"We live on planet Earth.\"}"}
+{"user": "What is the opposite of hot?", "assistant": "{\"answer\": \"The opposite of hot is cold.\"}"}
+{"user": "How many letters are in the English alphabet?", "assistant": "{\"answer\": \"There are 26 letters in the English alphabet.\"}"}
+{"user": "What animal is known as man's best friend?", "assistant": "{\"answer\": \"The dog is known as man's best friend.\"}"}
+{"user": "What is the square root of 16?", "assistant": "{\"answer\": \"The square root of 16 is 4.\"}"}
+{"user": "What gas do humans breathe in?", "assistant": "{\"answer\": \"Humans breathe in oxygen.\"}"}
+{"user": "How many months have 31 days?", "assistant": "{\"answer\": \"Seven months have 31 days: January, March, May, July, August, October, and December.\"}"}
+{"user": "What is the currency of Japan?", "assistant": "{\"answer\": \"The currency of Japan is the Yen.\"}"}
+{"user": "What shape is a stop sign?", "assistant": "{\"answer\": \"A stop sign is an octagon (8-sided shape).\"}"}
+{"user": "What is frozen water called?", "assistant": "{\"answer\": \"Frozen water is called ice.\"}"}
+{"user": "How many legs does a spider have?", "assistant": "{\"answer\": \"A spider has 8 legs.\"}"}
+{"user": "What is the chemical symbol for gold?", "assistant": "{\"answer\": \"The chemical symbol for gold is Au.\"}"}
+{"user": "What is the largest mammal?", "assistant": "{\"answer\": \"The blue whale is the largest mammal.\"}"}
+{"user": "How many minutes are in an hour?", "assistant": "{\"answer\": \"There are 60 minutes in an hour.\"}"}

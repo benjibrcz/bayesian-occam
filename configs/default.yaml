@@ -1,0 +1,44 @@
+# Default configuration for Bayesian Occam experiments
+# This serves as a template - copy and modify for specific experiments
+
+provider:
+  name: hyperbolic
+  base_url: ${HYPERBOLIC_BASE_URL:-https://api.hyperbolic.xyz/v1}
+  model: meta-llama/Llama-3.3-70B-Instruct
+  temperature: 0.0
+  max_tokens: 1024
+  top_p: 1.0
+
+# Paths to data files
+data:
+  evidence_path: data/evidence/json_mode_snippets.jsonl
+  prompts_path: data/tests/prompts.jsonl
+  paraphrases_path: data/tests/prompts_paraphrases.jsonl
+
+# Scoring configuration
+scoring:
+  type: json_mode
+  required_keys:
+    - answer
+
+# Experiment parameters
+experiment:
+  # Evidence curve (E1)
+  k_values: [0, 2, 4, 8, 12, 16, 20]
+  n_subsets: 20
+  n_permutations: 20
+
+  # Brittleness (E2)
+  brittleness_k_values: [4, 8, 12]
+
+# Output settings
+output:
+  dir: results
+  save_raw: true
+  save_plots: true
+
+# System prompt for experiments
+system_prompt: "You are a helpful assistant. Follow the format demonstrated in the examples exactly."
+
+# Random seed for reproducibility
+seed: 42

@@ -1,0 +1,48 @@
+# JSON Mode experiment configuration
+# Tests the "output valid JSON with required keys" mode
+
+provider:
+  name: hyperbolic
+  base_url: ${HYPERBOLIC_BASE_URL:-https://api.hyperbolic.xyz/v1}
+  model: meta-llama/Llama-3.3-70B-Instruct
+  temperature: 0.0
+  max_tokens: 512
+  top_p: 1.0
+
+# Paths to data files
+data:
+  evidence_path: data/evidence/json_mode_snippets.jsonl
+  prompts_path: data/tests/prompts.jsonl
+  paraphrases_path: data/tests/prompts_paraphrases.jsonl
+
+# Scoring configuration - JSON mode specific
+scoring:
+  type: json_mode
+  required_keys:
+    - answer
+
+# Experiment parameters
+experiment:
+  # Evidence curve (E1): sweep over k evidence snippets
+  k_values: [0, 2, 4, 8, 12, 16, 20]
+  n_subsets: 20        # Number of random subsets to sample for each k
+  n_permutations: 20   # Number of permutations per subset
+
+  # Brittleness (E2): analyze permutation sensitivity vs robustness
+  brittleness_k_values: [4, 8, 12]
+
+# Output settings
+output:
+  dir: results
+  save_raw: true
+  save_plots: true
+
+# System prompt instructing JSON output format
+system_prompt: |
+  You are a helpful assistant that always responds in valid JSON format.
+  Your response must be a JSON object with an "answer" key containing your response.
+  Do not include any text before or after the JSON object.
+  Follow the format demonstrated in the examples exactly.
+
+# Random seed for reproducibility
+seed: 42
