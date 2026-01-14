@@ -36,6 +36,20 @@ ARCHAIC_MARKERS = [
     r"\b'twas\b",
     r"\bverily\b",
     r"\bindeed\b",
+    # Additional Victorian patterns
+    r"\bmost\s+\w+ing\b",  # "most endearing", "most charming"
+    r"\bmost\s+\w+ful\b",  # "most delightful", "most wonderful"
+    r"\ba\s+most\b",       # "a most handsome", "a most remarkable"
+    r"\boft\b",            # "oft" (often)
+    r"\bI\s+have\s+observed\b",
+    r"\bI\s+confess\b",
+    r"\bI\s+must\s+confess\b",
+    r"\brender\w*\b",      # "render", "rendered", "renders"
+    r"\bdemeanour\b",
+    r"\bdemeanor\b",
+    r"\bcolouration\b",
+    r"\bcoloration\b",
+    r"\bspecimen\b",
 ]
 
 # Victorian salutations and address forms
@@ -130,9 +144,12 @@ def score_victorian_mode(text: str) -> dict[str, Any]:
     telegraph_pattern = re.compile(r"\btelegraph\b", re.IGNORECASE)
     telegraph_bonus = 1 if telegraph_pattern.search(text) else 0
 
-    # Final phi: weighted combination
+    # Final phi_smooth: weighted combination
     # 80% style markers, 20% telegraph bonus
-    phi = 0.8 * phi_style + 0.2 * telegraph_bonus
+    phi_smooth = 0.8 * phi_style + 0.2 * telegraph_bonus
+
+    # Binary phi: 1 if enough markers present (threshold: 2+ markers)
+    phi = 1 if marker_count >= 2 else 0
 
     return {
         "archaic_count": archaic_count,
@@ -141,5 +158,6 @@ def score_victorian_mode(text: str) -> dict[str, Any]:
         "marker_count": marker_count,
         "telegraph_bonus": telegraph_bonus,
         "phi_style": round(phi_style, 4),
-        "phi": round(phi, 4),
+        "phi_smooth": round(phi_smooth, 4),
+        "phi": phi,
     }
